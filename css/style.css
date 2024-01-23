@@ -1,0 +1,50 @@
+header{
+    color: #FFFFFF;
+}
+.nav__link1{
+    color: #2196F3;
+}
+.nav__link2{
+    color: #212121;
+}
+.nav__link3{
+    color: #757575;
+}
+/* colors section */ 
+.section1{
+    background-color: #2F303A;
+}
+h1{
+    color: #FFFFFF;
+}
+button{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+h3{
+    color: #212121;
+}
+/* colors section2 */
+.list{
+    color: #757575;
+}
+/* colors section3 */
+h2{
+    color: #212121;
+}
+.section3{
+    background-color: #F5F4FA;
+}
+.list2{
+    color: #757575;
+}
+/* colors footer */
+footer{
+    background-color: #2F303A;
+}
+.list1{
+    color: #757575;
+}
+.text{
+    color: #FFFFFF;
+}
