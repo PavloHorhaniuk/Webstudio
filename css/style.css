@@ -1,50 +1,67 @@
+:root{
+    --brand-color: #212121;
+    --color-blue: #2196F3;
+    --color-darkgray: #2F303A;
+    --color-gray: #757575;
+    --color-white: #FFFFFF;
+    --background-color: #F5F4FA;
+}
+.webstudio1{
+    color: var(--color-blue);
+}
+nav > a{
+    color: #000000;
+}
+footer > a{
+    color: var(--color-white)
+}
 header{
-    color: #FFFFFF;
+    color: var(--color-white)
 }
 .nav__link1{
-    color: #2196F3;
+    color:var(--color-blue)
 }
 .nav__link2{
-    color: #212121;
+    color: var(--brand-color)
 }
 .nav__link3{
-    color: #757575;
+    color: var(--color-gray)
 }
 /* colors section */ 
 .section1{
-    background-color: #2F303A;
+    background-color: var(--color-darkgray)
 }
 h1{
-    color: #FFFFFF;
+    color: var(--color-white)
 }
 button{
     background-color: #2196F3;
-    color: #FFFFFF;
+    color: var(--color-white)
 }
 h3{
-    color: #212121;
+    color: var(--brand-color)
 }
 /* colors section2 */
 .list{
-    color: #757575;
+    color: var(--color-gray)
 }
 /* colors section3 */
 h2{
-    color: #212121;
+    color: var(--brand-color)
 }
 .section3{
-    background-color: #F5F4FA;
+    background-color: var(--background-color)
 }
 .list2{
-    color: #757575;
+    color: var(--color-gray)
 }
 /* colors footer */
 footer{
-    background-color: #2F303A;
+    background-color: var(--color-darkgray)
 }
 .list1{
-    color: #757575;
+    color: var(--color-gray)
 }
 .text{
-    color: #FFFFFF;
+    color: var(--color-white)
 }
