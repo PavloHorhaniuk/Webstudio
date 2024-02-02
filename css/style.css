@@ -6,25 +6,56 @@
     --color-white: #FFFFFF;
     --background-color: #F5F4FA;
 }
+:root{
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
 .webstudio1{
     color: var(--color-blue);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
 nav > a{
     color: #000000;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
 }
 footer > a{
+    color: var(--color-blue);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
     color: var(--color-white)
 }
 header{
     color: var(--color-white)
+
 }
 .nav__link1{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
     color:var(--color-blue)
 }
 .nav__link2{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
     color: var(--brand-color)
+
 }
 .nav__link3{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
     color: var(--color-gray)
 }
 /* colors section */ 
@@ -32,36 +63,87 @@ header{
     background-color: var(--color-darkgray)
 }
 h1{
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 136%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
     color: var(--color-white)
 }
 button{
     background-color: #2196F3;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
     color: var(--color-white)
 }
 h3{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--brand-color)
+}
+.profession{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gray);
 }
 /* colors section2 */
 .list{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
     color: var(--color-gray)
 }
 /* colors section3 */
 h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
     color: var(--brand-color)
 }
 .section3{
     background-color: var(--background-color)
 }
 .list2{
-    color: var(--color-gray)
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--brand-color)
 }
 /* colors footer */
 footer{
     background-color: var(--color-darkgray)
 }
 .list1{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
     color: var(--color-gray)
 }
 .text{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
     color: var(--color-white)
 }
