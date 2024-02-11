@@ -5,6 +5,7 @@
     --color-gray: #757575;
     --color-white: #FFFFFF;
     --background-color: #F5F4FA;
+    --color-hover: #2196F3;
 }
 :root{
     --font-family: "Roboto", sans-serif;
@@ -32,34 +33,33 @@ footer > a{
     letter-spacing: 0.03em;
     color: var(--color-white)
 }
-header{
+.header{
     color: var(--color-white)
 
 }
-.nav__link1{
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color:var(--color-blue)
-}
-.nav__link2{
+.nav-link{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--brand-color)
-
+    
 }
-.nav__link3{
+.nav-link:hover{
+    color: var(--color-hover);
+}
+.header-list-link{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--color-gray)
 }
+.header-list-link:hover{
+    color: var(--color-hover);
+}
 /* colors section */ 
-.section1{
+.section-business{
     background-color: var(--color-darkgray)
 }
 h1{
@@ -72,17 +72,17 @@ h1{
     text-align: center;
     color: var(--color-white)
 }
-button{
+.button{
     background-color: #2196F3;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 16px;
-    line-height: 187%;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--color-white)
 }
-h3{
+.about-us-title{
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
@@ -90,7 +90,7 @@ h3{
     text-transform: uppercase;
     color: var(--brand-color)
 }
-.profession{
+.team-title{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -99,11 +99,11 @@ h3{
     color: var(--color-gray);
 }
 /* colors section2 */
-.list{
+.about-us-text{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-gray)
 }
@@ -116,10 +116,10 @@ h2{
     text-align: center;
     color: var(--brand-color)
 }
-.section3{
+.section-img{
     background-color: var(--background-color)
 }
-.list2{
+.team-text{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -131,19 +131,19 @@ h2{
 footer{
     background-color: var(--color-darkgray)
 }
-.list1{
+.footer-link{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-gray)
 }
-.text{
+.footer-text{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-white)
 }
