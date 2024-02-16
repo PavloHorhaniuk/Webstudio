@@ -6,6 +6,7 @@
     --color-white: #FFFFFF;
     --background-color: #F5F4FA;
     --color-hover: #2196F3;
+    --color-address: rgb(153, 153, 153);
 }
 :root{
     --font-family: "Roboto", sans-serif;
@@ -14,21 +15,21 @@
 body{
     font-family: "Roboto", sans-serif;
 }
-.webstudio1{
+.span-logo{
     color: var(--color-blue);
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
 }
-nav > a{
+.header-logo{
     color: #000000;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
 }
-footer > a{
+.footer-logo{
     color: var(--color-blue);
     font-family: var(--second-family);
     font-weight: 700;
@@ -69,7 +70,7 @@ h1{
     /* font-family: var(--font-family); */
     font-weight: 900;
     font-size: 44px;
-    line-height: 136%;
+    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
@@ -131,7 +132,7 @@ h2{
     color: var(--brand-color)
 }
 /* colors footer */
-footer{
+.footer{
     background-color: var(--color-darkgray)
 }
 .footer-link{
@@ -140,7 +141,8 @@ footer{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-gray)
+    color: var(--color-address);
+    
 }
 .footer-text{
     /* font-family: var(--font-family); */
