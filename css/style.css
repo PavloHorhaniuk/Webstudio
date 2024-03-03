@@ -7,6 +7,7 @@
     --background-color: #F5F4FA;
     --color-hover: #2196F3;
     --color-address: rgb(153, 153, 153);
+    --color-dark: #000;
 }
 :root{
     --font-family: "Roboto", sans-serif;
@@ -14,6 +15,19 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+}
+.conteiner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px solid tomato;
+    
+}
+/* header */
+.header{
+    /* color: var(--color-white) */
+    padding: 15px 0px 15px 0px;
+    background-color: aqua;
 }
 .span-logo{
     color: var(--color-blue);
@@ -23,23 +37,26 @@ body{
     letter-spacing: 0.03em;
 }
 .header-logo{
-    color: #000000;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
+    margin-right: 93px;
+    color: var(--color-dark)
 }
-.footer-logo{
-    color: var(--color-blue);
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    color: var(--color-white)
+.nav,
+.nav-list,
+.nav-item,
+.header-list,
+.header-list-item{
+    display: inline-block;
 }
-.header{
-    color: var(--color-white)
-
+.nav-item:nth-child(2){
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.nav-item:nth-last-child(1){
+    margin-right: 200px;
 }
 .nav-link{
     font-family: var(--font-family);
@@ -47,12 +64,12 @@ body{
     font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--brand-color)
-    
 }
 .nav-link:hover{
     color: var(--color-hover);
 }
-.header-list-link{
+.header-list-link:nth-child(1){
+    margin-right: 50px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -64,10 +81,14 @@ body{
 }
 /* colors section */ 
 .section-business{
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--color-darkgray)
+    
 }
 h1{
     /* font-family: var(--font-family); */
+    padding-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -84,27 +105,29 @@ h1{
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
+    display: block;
+    margin: 0 auto;
     color: var(--color-white)
 }
-.about-us-title{
+.section-about-us{
+    padding-top: 94px;
+}
+.about-us-list,
+.about-us-item{
+    display: inline-block;
+}
+.about-us-title:nth-child(1){
     /* font-family: var(--font-family); */
+    margin-left: 30px;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color)
 }
-.team-title{
+.about-us-text:nth-child(2){
     /* font-family: var(--font-family); */
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--color-gray);
-}
-/* colors section2 */
-.about-us-text{
-    /* font-family: var(--font-family); */
+    margin-left: 30px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -112,16 +135,51 @@ h1{
     color: var(--color-gray)
 }
 /* colors section3 */
-h2{
+.section-img{
+    padding-top: 78px;
+    background-color: var(--background-color)
+}
+.img-titel{
     /* font-family: var(--font-family); */
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--brand-color)
 }
-.section-img{
-    background-color: var(--background-color)
+.img-item{
+    display: inline-block;
+}
+.img{
+    display: inline-block;
+}
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-img:nth-child(1){
+    padding-right: 50px;
+}
+.team-item{
+    display: inline-block;
+}
+.ours-team-titel{
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--brand-color)
+}
+.team-title{
+    /* font-family: var(--font-family); */
+    
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-gray);
 }
 .team-text{
     /* font-family: var(--font-family); */
@@ -133,10 +191,22 @@ h2{
 }
 /* colors footer */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--color-darkgray)
 }
-.footer-link{
+.footer-text{
     /* font-family: var(--font-family); */
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-white)
+}
+.footer-link:nth-child(1){
+    /* font-family: var(--font-family); */
+    padding-top: 9px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -144,11 +214,11 @@ h2{
     color: var(--color-address);
     
 }
-.footer-text{
-    /* font-family: var(--font-family); */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+.footer-logo{
+    color: var(--color-blue);
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
     letter-spacing: 0.03em;
     color: var(--color-white)
 }
