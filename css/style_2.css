@@ -8,13 +8,10 @@
     --color-hover: #2196F3;
     --color-address: rgb(153, 153, 153);
     --color-dark: #000;
+    --color-button: #F5F4FA;
 }
 :root{
     --font-family: "Roboto", sans-serif;
-    --second-family: "Raleway", sans-serif;
-}
-body{
-    font-family: "Roboto", sans-serif;
 }
 .conteiner-header{
     display: flex;
@@ -79,7 +76,7 @@ body{
     outline: dashed 2px gold ;
 }
 .header-list-item:nth-child(1){
-    padding-right: 45px;
+    padding-right: 49px;
 }
 .header-list-link{
     font-family: var(--font-family);
@@ -91,136 +88,70 @@ body{
 .header-list-link:hover{
     color: var(--color-hover);
 }
-/* colors section */ 
-.section-business{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: var(--color-darkgray)
-    
+.section{
+    margin-top: 94px;
+    margin-bottom: 94px;
 }
-h1{
-    /* font-family: var(--font-family); */
-    margin-left: 200px;
-    margin-right: 200px;
+.button-list{
+    outline: dashed ;
+    width: 575px;
+    margin-left: 312px;
+    margin-right: 312px;
     display: flex;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--color-white)
-}
-.button{
-    background-color: #2196F3;
-    /* font-family: var(--font-family); */
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-align: center;
-    display: flex;
-    margin: 0 auto;
-    color: var(--color-white)
-}
-.section-about-us{
-    padding-top: 94px;
-}
-.about-us-list{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     justify-content: space-between;
 }
-.about-us-item{
-    width: 270px;
-}
-.about-us-title{
-    /* font-family: var(--font-family); */
-    font-weight: 700;
-    font-size: 14px;
+.button{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--brand-color)
+    padding: 6px 22px 6px 22px;
+    color: var(--brand-color);
+    background-color: var(--color-button);
 }
-.about-us-text{
-    /* font-family: var(--font-family); */
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--color-gray)
-}
-/* colors section3 */
-.section-img{
-    padding-top: 78px;
-    padding-bottom: 94px;
-    background-color: var(--background-color)
-}
-.img-titel{
-    /* font-family: var(--font-family); */
-    padding-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--brand-color)
+.button:hover{
+    color: var(--color-white);
+    background-color: var(--color-hover);
 }
 .img-list{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 .img-item{
-    width: 370px;
+    padding-bottom: 30px;
 }
-.section-team{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.team-list{
-    display: flex;
-}
-.team-item{
-    width: 270px;
-    text-align: center;
-    margin: 0 auto;
-}
-.ours-team-titel{
-    padding-bottom: 50px;
+.img-titel{
+    font-family: var(--font-family);
     font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--brand-color)
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    color: var(--brand-color);
 }
-.team-title{
-    /* font-family: var(--font-family); */
-    
-    font-weight: 500;
+.img-text{
+    font-family: var(--font-family);
+    font-weight: 400;
     font-size: 16px;
+    line-height: 187%;
     letter-spacing: 0.03em;
-    text-align: center;
+    padding-left: 24px;
     color: var(--color-gray);
 }
-.team-text{
-    /* font-family: var(--font-family); */
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    color: var(--brand-color)
-}
-/* colors footer */
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--color-darkgray)
 }
 .footer-text{
-    /* font-family: var(--font-family); */
+    font-family: var(--font-family);
     padding-top: 20px;
     font-weight: 400;
     font-size: 14px;
@@ -229,7 +160,7 @@ h1{
     color: var(--color-white)
 }
 .footer-link:nth-child(1){
-    /* font-family: var(--font-family); */
+    font-family: var(--font-family);
     padding-top: 9px;
     font-weight: 400;
     font-size: 14px;
