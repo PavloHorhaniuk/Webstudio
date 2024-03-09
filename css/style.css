@@ -26,7 +26,9 @@ body{
 /* header */
 .header{
     /* color: var(--color-white) */
-    padding: 15px 0px 15px 0px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: aqua;
 }
 .span-logo{
@@ -37,6 +39,7 @@ body{
     letter-spacing: 0.03em;
 }
 .header-logo{
+    
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 26px;
@@ -44,20 +47,15 @@ body{
     margin-right: 93px;
     color: var(--color-dark)
 }
-.nav,
-.nav-list,
-.nav-item,
-.header-list,
-.header-list-item{
-    display: inline-block;
+.nav{
+    display: flex;
 }
-.nav-item:nth-child(2){
-    margin-left: 50px;
-    margin-right: 50px;
-}
-.nav-item:nth-last-child(1){
-    margin-right: 200px;
-}
+.nav-list{
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+    outline: dashed 2px;
+} 
 .nav-link{
     font-family: var(--font-family);
     font-weight: 500;
@@ -68,8 +66,13 @@ body{
 .nav-link:hover{
     color: var(--color-hover);
 }
-.header-list-link:nth-child(1){
-    margin-right: 50px;
+.header-list{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-grow: 1;
+    outline: dashed 2px gold ;
+}
+.header-list-link{
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -88,6 +91,11 @@ body{
 }
 h1{
     /* font-family: var(--font-family); */
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
     padding-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -105,29 +113,32 @@ h1{
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
-    display: block;
+    display: flex;
     margin: 0 auto;
     color: var(--color-white)
 }
 .section-about-us{
     padding-top: 94px;
 }
-.about-us-list,
-.about-us-item{
-    display: inline-block;
+.about-us-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    justify-content: space-between;
 }
-.about-us-title:nth-child(1){
+.about-us-item{
+    width: 270px;
+}
+.about-us-title{
     /* font-family: var(--font-family); */
-    margin-left: 30px;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color)
 }
-.about-us-text:nth-child(2){
+.about-us-text{
     /* font-family: var(--font-family); */
-    margin-left: 30px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -137,6 +148,7 @@ h1{
 /* colors section3 */
 .section-img{
     padding-top: 78px;
+    padding-bottom: 94px;
     background-color: var(--background-color)
 }
 .img-titel{
@@ -148,21 +160,22 @@ h1{
     text-align: center;
     color: var(--brand-color)
 }
-.img-item{
-    display: inline-block;
+.img-list{
+    display: flex;
+    justify-content: space-between;
 }
-.img{
-    display: inline-block;
+.img-item{
+    width: 370px;
 }
 .section-team{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.team-img:nth-child(1){
-    padding-right: 50px;
+.team-list{
+    display: flex;
 }
 .team-item{
-    display: inline-block;
+    width: 270px;
     text-align: center;
     margin: 0 auto;
 }
@@ -214,7 +227,6 @@ h1{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-address);
-    
 }
 .footer-logo{
     color: var(--color-blue);
