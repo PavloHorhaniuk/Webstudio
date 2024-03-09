@@ -163,6 +163,8 @@ h1{
 }
 .team-item{
     display: inline-block;
+    text-align: center;
+    margin: 0 auto;
 }
 .ours-team-titel{
     padding-bottom: 50px;
