@@ -16,18 +16,18 @@
 body{
     font-family: "Roboto", sans-serif;
 }
-.conteiner-header{
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    outline: 1px solid tomato;
-}
 .conteiner{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
     outline: 1px solid tomato;
+}
+.flex-section{
+    padding-top: 94px;
+}
+.flex-header{
+    display: flex;
+    align-items: center;
 }
 /* header */
 .header{
@@ -55,11 +55,13 @@ body{
 }
 .nav{
     display: flex;
+    margin-right: 344px;
 }
 .nav-list{
     width: 281px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     outline: dashed 2px;
 } 
 .nav-link{
@@ -74,12 +76,11 @@ body{
 }
 .header-list{
     display: flex;
-    /* justify-content: space-between; */
-    margin-left: 344px;
+    align-items: center;
     outline: dashed 2px gold ;
 }
-.header-list-item:nth-child(1){
-    padding-right: 45px;
+.header-list-item:first-child{
+    margin-right: 50px;
 }
 .header-list-link{
     font-family: var(--font-family);
@@ -96,46 +97,45 @@ body{
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--color-darkgray)
-    
 }
-h1{
-    /* font-family: var(--font-family); */
-    margin-left: 200px;
-    margin-right: 200px;
+.flex-bussines{
+    width: 696px;
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
-    padding-bottom: 30px;
+    text-align: center;
+}
+.business-titel{
+    /* font-family: var(--font-family); */
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    text-align: center;
     color: var(--color-white)
 }
-.button{
-    background-color: #2196F3;
+.business-button{
     /* font-family: var(--font-family); */
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    text-align: center;
-    display: flex;
     margin: 0 auto;
+    border-radius: 5px;
+    background-color: #2196F3;
     color: var(--color-white)
 }
-.section-about-us{
-    padding-top: 94px;
+.flex-about-us{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
 }
 .about-us-list{
     display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    justify-content: space-between;
 }
 .about-us-item{
+    margin-right: 30px;
     width: 270px;
 }
 .about-us-title{
@@ -148,6 +148,7 @@ h1{
 }
 .about-us-text{
     /* font-family: var(--font-family); */
+    margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -156,13 +157,10 @@ h1{
 }
 /* colors section3 */
 .section-img{
-    padding-top: 78px;
-    padding-bottom: 94px;
     background-color: var(--background-color)
 }
 .img-titel{
     /* font-family: var(--font-family); */
-    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
@@ -171,29 +169,44 @@ h1{
 }
 .img-list{
     display: flex;
+    justify-content: center;
     justify-content: space-between;
-}
-.img-item{
-    width: 370px;
+    margin-top: 50px;
 }
 .section-team{
-    padding-top: 94px;
     padding-bottom: 94px;
+}
+.flex-team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .team-list{
     display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 20px
 }
 .team-item{
     width: 270px;
-    text-align: center;
+    /* display: flex; */
+    padding-right: 30px;
     margin: 0 auto;
 }
 .ours-team-titel{
-    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
-    text-align: center;
+    color: var(--brand-color)
+}
+.team-text{
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
     color: var(--brand-color)
 }
 .team-title{
@@ -201,19 +214,8 @@ h1{
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
-    text-align: center;
     color: var(--color-gray);
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-.team-text{
-    /* font-family: var(--font-family); */
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding-top: 30px;
-    color: var(--brand-color)
+    margin-top: 10px;
 }
 /* colors footer */
 .footer{
@@ -221,18 +223,24 @@ h1{
     padding-bottom: 60px;
     background-color: var(--color-darkgray)
 }
+.footer-list{  
+    width: 231px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 20px;
+}
 .footer-text{
     /* font-family: var(--font-family); */
-    padding-top: 20px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-white)
 }
-.footer-link:nth-child(1){
+.footer-link{
     /* font-family: var(--font-family); */
-    padding-top: 9px;
+    margin-top: 9px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -245,5 +253,65 @@ h1{
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
+    text-align: left;
     color: var(--color-white)
+}
+/* ============================================================= */
+.section{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+.button-list{
+    outline: dashed ;
+    width: 575px;
+    margin-left: 312px;
+    margin-right: 312px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.button{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    padding: 6px 22px 6px 22px;
+    border-radius: 5px;
+    color: var(--brand-color);
+    background-color: var(--color-button);
+}
+.button:hover{
+    color: var(--color-white);
+    background-color: var(--color-hover);
+}
+.img-list-portfolio{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.img-item-portfolio{
+    padding-bottom: 30px;
+}
+.img-titel-portfolio{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    color: var(--brand-color);
+}
+.img-text{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.03em;
+    padding-left: 24px;
+    color: var(--color-gray);
 }
