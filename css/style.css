@@ -22,9 +22,6 @@ body{
     padding: 0 15px;
     outline: 1px solid tomato;
 }
-.flex-section{
-    padding-top: 94px;
-}
 .flex-header{
     display: flex;
     align-items: center;
@@ -99,13 +96,14 @@ body{
     background-color: var(--color-darkgray)
 }
 .flex-bussines{
-    width: 696px;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
 }
 .business-titel{
     /* font-family: var(--font-family); */
+    width: 696px;
+    text-align: center;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -121,15 +119,13 @@ body{
     line-height: 1.87;
     letter-spacing: 0.06em;
     margin: 0 auto;
+    padding: 10px 32px 10px 32px;
     border-radius: 5px;
     background-color: #2196F3;
     color: var(--color-white)
 }
-.flex-about-us{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: left;
+.section-about-us{
+    padding-top: 94px;
 }
 .about-us-list{
     display: flex;
@@ -157,7 +153,8 @@ body{
 }
 /* colors section3 */
 .section-img{
-    background-color: var(--background-color)
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .img-titel{
     /* font-family: var(--font-family); */
@@ -174,23 +171,25 @@ body{
     margin-top: 50px;
 }
 .section-team{
+    padding-top: 94px;
     padding-bottom: 94px;
+    background-color: var(--background-color)
 }
 .flex-team{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
 }
 .team-list{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
     margin-top: 50px;
-    padding-bottom: 20px
 }
 .team-item{
     width: 270px;
+    border-radius: 5px;
+    background-color: var(--color-white);
     /* display: flex; */
     /* padding-right: 30px; */
     /* margin-right: 30px; */
@@ -220,6 +219,7 @@ body{
     letter-spacing: 0.03em;
     color: var(--color-gray);
     margin-top: 10px;
+    margin-bottom: 20px
 }
 /* colors footer */
 .footer{
@@ -227,11 +227,7 @@ body{
     padding-bottom: 60px;
     background-color: var(--color-darkgray)
 }
-.footer-list{  
-    width: 231px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
+.address{
     margin-top: 20px;
 }
 .footer-text{
@@ -241,6 +237,10 @@ body{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-white)
+}
+.footer-item:not(:last-child){
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 .footer-link{
     /* font-family: var(--font-family); */
@@ -268,8 +268,7 @@ body{
 .button-list{
     outline: dashed ;
     width: 575px;
-    margin-left: 312px;
-    margin-right: 312px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -282,8 +281,7 @@ body{
     letter-spacing: 0.03em;
     padding: 6px 22px 6px 22px;
     border-radius: 5px;
-    color: var(--brand-color);
-    background-color: var(--color-button);
+    background-color: var(--background-color);
 }
 .button:hover{
     color: var(--color-white);
