@@ -20,7 +20,6 @@ body{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 1px solid tomato;
 }
 .flex-header{
     display: flex;
@@ -59,7 +58,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: dashed 2px;
 } 
 .nav-link{
     font-family: var(--font-family);
@@ -74,7 +72,6 @@ body{
 .header-list{
     display: flex;
     align-items: center;
-    outline: dashed 2px gold ;
 }
 .header-list-item:first-child{
     margin-right: 50px;
@@ -266,7 +263,6 @@ body{
     margin-bottom: 94px;
 }
 .button-list{
-    outline: dashed ;
     width: 575px;
     margin: 0 auto;
     display: flex;
@@ -283,14 +279,23 @@ body{
     border-radius: 5px;
     background-color: var(--background-color);
 }
-.button:hover{
+.button:active{
     color: var(--color-white);
     background-color: var(--color-hover);
 }
+.border-portfolio{
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+    
+}
 .img-list-portfolio{
+    /* display: grid; */
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    flex-basis: calc((100% - 180) /3);
+    gap: 30px;
+    /* flex-wrap: wrap; */
     padding-top: 50px;
     padding-bottom: 30px;
 }
@@ -314,6 +319,7 @@ body{
     line-height: 187%;
     letter-spacing: 0.03em;
     margin-top: 4px;
-    margin-left: 24px;
+    padding-left: 24px;
+    padding-bottom: 20px;
     color: var(--color-gray);
 }
