@@ -131,12 +131,53 @@ body{
     margin-right: 30px;
     width: 270px;
 }
+.about-us-item:nth-child(1)::before{
+    display: flex;
+    height: 120px;
+    background-image: url(./img/antenna\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    content: '';
+}
+.about-us-item:nth-child(2)::before{
+    display: flex;
+    height: 120px;
+    background-image: url(./img/clock\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    content: '';
+} 
+.about-us-item:nth-child(3)::before{
+    display: flex;
+    height: 120px;
+    background-image: url(./img/diagram\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    content: '';
+}
+.about-us-item:nth-child(4)::before{
+    display: flex;
+    height: 120px;
+    background-image: url(./img/astronaut\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    content: '';
+}
 .about-us-title{
     /* font-family: var(--font-family); */
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 30px;
     color: var(--brand-color)
 }
 .about-us-text{
