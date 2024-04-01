@@ -135,7 +135,7 @@ body{
 .about-us-item:nth-child(1)::before{
     display: flex;
     height: 120px;
-    background-image: url(./img/antenna\ 1.jpg);
+    background-image: url(../images/antenna.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -145,7 +145,7 @@ body{
 .about-us-item:nth-child(2)::before{
     display: flex;
     height: 120px;
-    background-image: url(./img/clock\ 1.jpg);
+    background-image: url(../images/clock.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -155,7 +155,7 @@ body{
 .about-us-item:nth-child(3)::before{
     display: flex;
     height: 120px;
-    background-image: url(./img/diagram\ 1.jpg);
+    background-image: url(../images/diagram.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -165,7 +165,7 @@ body{
 .about-us-item:nth-child(4)::before{
     display: flex;
     height: 120px;
-    background-image: url(./img/astronaut\ 1.jpg);
+    background-image: url(../images/astronaut.png);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -306,6 +306,7 @@ body{
 }
 .button-list{
     width: 575px;
+    height: 54px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -319,12 +320,12 @@ body{
     letter-spacing: 0.03em;
     padding: 6px 22px 6px 22px;
     border-radius: 4px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
     background-color: var(--background-color);
 }
 .button:active{
     color: var(--color-white);
     background-color: var(--color-hover);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .border-portfolio{
     border-right: solid 1px #eee;
@@ -332,16 +333,16 @@ body{
     border-left: solid 1px #eee;
 }
 .img-list-portfolio{
-    /* display: grid; */
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100% - 60) /3);
     padding-top: 50px;
     padding-bottom: 30px;
-    
 }
-.img-item-portfolio:nth-child(1){
+.img-item-portfolio{
+    flex-basis: calc((100% - 60) /3);
+}
+.img-item-portfolio:hover{
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .img-titel-portfolio{
