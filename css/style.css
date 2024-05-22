@@ -81,6 +81,9 @@ body{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--color-gray)
 }
 .header-list-link:hover{
