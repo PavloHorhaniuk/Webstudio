@@ -276,14 +276,16 @@ body {
 }
 
 .box-team-svg {
+    /* display: flex; */
+    /* align-items: center; */
     outline: #000 solid;
     width: 206px;
     height: 44px;
 }
 
 .team-link {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     gap: 10px;
     fill: #AFB1B8;
 }
@@ -329,7 +331,9 @@ body {
     padding-top: 90px;
     padding-bottom: 94px;
 }
-
+.customers-list{
+    display: flex;
+}
 .customers-titel {
     font-family: var(--font-family);
     font-weight: 700;
@@ -340,6 +344,8 @@ body {
 }
 .customers-item{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     color: #AFB1B8;
@@ -348,8 +354,6 @@ body {
 }
 .customers-link{
     display: flex;
-    align-items: center;
-    justify-content: center;
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
