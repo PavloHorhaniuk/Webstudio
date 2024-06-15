@@ -145,7 +145,43 @@ body {
     background-color: #2196F3;
     color: var(--color-white)
 }
+/* ============MODAL============= */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
 
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    background-color: skyblue;
+    transform: translate(-50%, -50%);
+}
+
+.modal .btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+/* =================================== */
 .section-about-us {
     padding-top: 94px;
 }
@@ -245,6 +281,32 @@ body {
     margin-top: 50px;
 }
 
+.img-item {
+    display: flex;
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.img-text {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    z-index: 1;
+    top: 224px;
+}
+
 .section-team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -265,6 +327,7 @@ body {
 }
 
 .team-item {
+    /* display: flex; */
     width: 270px;
     padding-bottom: 20px;
     border-radius: 0 0 4px 4px;
@@ -275,28 +338,29 @@ body {
     /* margin-right: 30px; */
 }
 
-.box-team-svg {
+.team-svg-list {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.team-svg-item {
     /* display: flex; */
-    /* align-items: center; */
-    outline: #000 solid;
-    width: 206px;
-    height: 44px;
 }
 
 .team-link {
-    display: flex;
+    /* display: flex; */
     /* align-items: center; */
-    gap: 10px;
+    /* gap: 10px; */
     fill: #AFB1B8;
 }
 
-.team-link:hover {
+/* .team-link:hover {
     fill: var(--background-color);
     background-color: var(--color-hover);
     border-radius: 50%;
     width: 44px;
     height: 44px;
-}
+} */
 
 .team-item:not(:last-child) {
     margin-right: 30px;
@@ -331,9 +395,11 @@ body {
     padding-top: 90px;
     padding-bottom: 94px;
 }
-.customers-list{
+
+.customers-list {
     display: flex;
 }
+
 .customers-titel {
     font-family: var(--font-family);
     font-weight: 700;
@@ -341,8 +407,10 @@ body {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--brand-color);
+    margin-bottom: 50px;
 }
-.customers-item{
+
+.customers-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,17 +420,37 @@ body {
     border: 1px solid #AFB1B8;
     border-radius: 5px;
 }
-.customers-link{
+
+.customers-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
 }
+
+.customers-item:hover .customers-link {
+    fill: var(--color-hover);
+}
+
+.customers-item:hover {
+    border: 1px solid var(--color-hover);
+}
+
 /* colors footer */
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--color-darkgray)
+}
+
+.box-footer {
+    display: block;
 }
 
 .address {
@@ -403,8 +491,14 @@ body {
     color: var(--color-white)
 }
 
+.flex-svg {
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
 .footer-titel-svg {
     font-family: var(--font-family);
+    /* display: flex; */
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -413,30 +507,33 @@ body {
 }
 
 .footer-list-svg {
-    /* display: flex; */
-}
-.footer-item-svg{
     display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    outline: auto;
+    /* width: 206px; */
+    /* height: 80px; */
+}
 
-    width: 206px;
-    height: 80px;
-}
-.box-footer-svg {
+.footer-item-svg {
     display: flex;
-    outline: #000 solid;
-    width: 206px;
-    height: 44px;
+    flex-direction: column;
+    /* width: 206px; */
+    /* height: 80px; */
 }
+
 .footer-link-svg {
     display: flex;
     align-items: center;
     fill: var(--color-white);
-    background-color:  rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
     height: 44px;
 }
-.footer-link-svg:hover{
+
+.footer-link-svg:hover {
     background-color: var(--color-hover);
     border-radius: 50%;
     width: 44px;
