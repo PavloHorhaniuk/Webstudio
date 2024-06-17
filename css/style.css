@@ -343,11 +343,6 @@ body {
     justify-content: center;
     gap: 10px;
 }
-
-.team-svg-item {
-    /* display: flex; */
-}
-
 .team-link {
     display: flex;
     align-items: center;
@@ -358,7 +353,7 @@ body {
     fill: #AFB1B8;
 }
 
-.team-item:hover .team-link {
+.team-svg-item:hover .team-link {
     fill: var(--background-color);
     background-color: var(--color-hover);
 }
@@ -389,6 +384,7 @@ body {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--color-gray);
+    margin-bottom: 16px;
     margin-top: 10px;
 }
 
@@ -449,11 +445,9 @@ body {
     padding-bottom: 60px;
     background-color: var(--color-darkgray)
 }
-
-.box-footer {
-    display: block;
+.footer .conteiner{
+    display: flex;
 }
-
 .address {
     margin-top: 20px;
 }
@@ -493,40 +487,31 @@ body {
 }
 
 .flex-svg {
-    /* display: flex; */
-    /* flex-direction: column; */
+    width: 206px;
+    height: 80px;
 }
 
 .footer-titel-svg {
     font-family: var(--font-family);
-    /* display: flex; */
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 20px;
     color: var(--color-white);
 }
 
 .footer-list-svg {
     display: flex;
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    outline: auto;
-    /* width: 206px; */
-    /* height: 80px; */
-}
-
-.footer-item-svg {
-    display: flex;
-    flex-direction: column;
-    /* width: 206px; */
-    /* height: 80px; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .footer-link-svg {
     display: flex;
     align-items: center;
+    justify-content: center;
     fill: var(--color-white);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -534,13 +519,14 @@ body {
     height: 44px;
 }
 
-.footer-link-svg:hover {
+.footer-item-svg:hover .footer-link-svg {
     background-color: var(--color-hover);
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
 }
 
+.box-footer{
+    width: 231px;
+    margin-right: 70px;
+}
 
 /* ============================================================= */
 .section {
