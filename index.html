@@ -51,16 +51,37 @@
         <section class="section-business">
             <div class="conteiner flex-bussines">
                 <h1 class="business-titel">Ефективні рішення для вашого бізнесу</h1>
-                <button class="business-button" type="button"
-                 data-modal-open>Замовити послугу</button>
-                 <div class="backdrop is-hidden" data-modal>
+                <button class="business-button" type="button" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                     <button class="btn" data-modal-close>Закрити</button>
-                     <br />
-                     <br />
-                     <p class="modal-text">Тут буде ФОРМА:</p>
+                        <button class="btn" data-modal-close>Закрити</button>
+                        <br />
+                        <br />
+                        <h3 class="form-titel">Залиште свої дані, ми вам передзвонимо</h3>
+                        <form class="form">
+                            
+                            <label class="label-name" for="user_name">Ім'я</label>
+                            <input class="input-name" type="text" name="Ім'я" id="user_name"/>
+                            <br>
+                            <label class="label-tel" for="user_tel">Телефон</label>
+                            <input class="input-tel" type="tel" name="Телефон"> 
+                            <br>
+
+                            <label class="label-email" for="user_email">Пошта</label>
+                            <input class="input-email" type="email" name="Пошта" id="user_email"/>
+                            
+                            <label class="label-text" for="text-area">Коментар</label>
+                            <textarea class="text-area" name="Коментар" id="text-area" placeholder="Введіть текст"></textarea>
+
+                            <label class="label-checkbox">
+                            <input class="checkbox" type="checkbox"/>
+                            <p class="checkbox-text">Погоджуюся з розсилкою та приймаю
+                             <span><a class="checkbox-link" href="./">Умови договору</a></span></p>
+                            </label>
+                            <button class="form-button" type="submit">Відправити</button>
+                        </form>
                     </div>
-                   </div>
+                </div>
             </div>
         </section>
         <section class="section-about-us">
@@ -122,7 +143,7 @@
                         <img class="img" src="./images/img2.jpg" alt="фото 2" width="370" />
                         <p class="img-text">МОБІЛЬНІ ДОДАТКИ</p>
                     </li>
-                    <li  class="img-item"> 
+                    <li class="img-item">
                         <img class="img" src="./images/img3.jpg" alt="фото 3" width="370" />
                         <p class="img-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                     </li>
@@ -140,7 +161,7 @@
                         <ul class="team-svg-list">
                             <li class="team-svg-item">
                                 <a class="team-link" href="">
-                                    <svg width="20" height="20" >
+                                    <svg width="20" height="20">
                                         <use href="./images/symboldefs.svg#instagram_svg"></use>
                                     </svg>
                                 </a>
@@ -336,7 +357,7 @@
                         <li class="footer-item"><a class="footer-link"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li class="footer-item"><a class="footer-link" href="tel:+38-096-111-11-11">+38 096 111 11 11
-                                </a>
+                            </a>
                         </li>
                     </ul>
                 </address>
@@ -373,6 +394,14 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="form-box">
+                <h3 class="subscribe-titel">Підпишіться на розсилку</h3>
+                <form>
+                    <label for="e-mail"></label>
+                    <input class="subscribe-input" type="email" id="e-mail" placeholder="E-mail">
+                    <a class="subscribe-link" href="./">Підписатися</a>
+                </form>
             </div>
         </div>
     </footer>
