@@ -215,9 +215,24 @@ body {
     color: var(--color-gray);
 }
 
+.input-box{
+    position: relative;
+}
+
+.input-svg{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.input-box:hover{
+    fill: var(--color-hover);
+}
+
 .input-name,
 .input-tel,
 .input-email {
+    /* position: absolute; */
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
@@ -705,6 +720,10 @@ body {
     padding-top: 12px;
 }
 
+.form-footer{
+    display: flex;
+}
+
 .subscribe-titel {
     font-family: var(--font-family);
     font-weight: 700;
@@ -716,6 +735,7 @@ body {
 }
 
 .subscribe-input {
+    /* display: flex; */
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
@@ -727,19 +747,27 @@ body {
 }
 
 .subscribe-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
+    fill: #FFFFFF;
     color: var(--color-white);
     border-radius: 4px;
     width: 200px;
     height: 50px;
-    padding: 10px 28px 10px 28px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--color-blue);
+}
+
+.svg-telegram{
+    margin-left: 10px;
 }
 
 /* ============================================================= */
