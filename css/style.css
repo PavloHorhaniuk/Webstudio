@@ -215,17 +215,17 @@ body {
     color: var(--color-gray);
 }
 
-.input-box{
+.input-box {
     position: relative;
 }
 
-.input-svg{
+.input-svg {
     position: absolute;
     top: 25%;
     left: 10%;
 }
 
-.input-box:hover{
+.input-box:hover {
     fill: var(--color-hover);
 }
 
@@ -238,6 +238,7 @@ body {
     width: 448px;
     height: 40px;
     margin-bottom: 10px;
+    padding-left: 42px;
 }
 
 .input-name:focus {
@@ -720,7 +721,7 @@ body {
     padding-top: 12px;
 }
 
-.form-footer{
+.form-footer {
     display: flex;
 }
 
@@ -736,12 +737,19 @@ body {
 
 .subscribe-input {
     /* display: flex; */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
     height: 50px;
     margin-right: 12px;
     outline: none;
+    padding-left: 16px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: rgba(33, 150, 243, 0);
 }
@@ -766,7 +774,7 @@ body {
     background: var(--color-blue);
 }
 
-.svg-telegram{
+.svg-telegram {
     margin-left: 10px;
 }
 
@@ -845,4 +853,29 @@ body {
     padding-bottom: 20px;
     padding-left: 24px;
     color: var(--color-gray);
+}
+
+.portfolio-img-box{
+    display: flex;
+    width: 370px;
+    height: 294px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.portfolio-img-box:hover {
+    transform: translateY();
+    overflow: visible;
+}
+.overlay{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY();
+    transition: transform 250ms ease;
+}
+.portfolio-img{
+    position: relative;
 }
