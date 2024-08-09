@@ -855,31 +855,6 @@ body {
     color: var(--color-gray);
 }
 
-/* .portfolio-img-box{
-    display: flex;
-    width: 370px;
-    height: 294px;
-    position: relative;
-    overflow: hidden;
-}
-.portfolio-img-box:hover {
-    transform: translateY(-100);
-    overflow: visible;
-}
-.overlay{
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(33, 150, 243, 0.9);
-    transform: translateY(100);
-    transition: transform 250ms ease;
-}
-.portfolio-img{
-    position: relative;
-} */
-
 .card-overlay-box {
     position: relative;
     width: 100%;
