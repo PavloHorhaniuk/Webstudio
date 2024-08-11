@@ -31,12 +31,11 @@ body {
 }
 
 .header {
-    /* color: var(--color-white) */
+    background-color: var(--color-white);
     margin: 0 auto;
     height: 80px;
     /* padding-top: 16px; */
     /* padding-bottom: 16px; */
-    background-color: aqua;
     max-width: 100%;
 }
 
@@ -86,7 +85,7 @@ body {
 .nav-link::after {
     position: absolute;
     content: '';
-    bottom: -190%;
+    bottom: -185%;
     left: 0;
     width: 100%;
     height: 2px;
@@ -133,19 +132,32 @@ body {
 
 /* colors section */
 .section-business {
+    position: relative;
+    z-index: 1;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/business.png) ;
+    height: 100vh;
+    background-image: url(../images/business.png);
     display: flex;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
-    /* background-color: rgba(47, 48, 58, 0.4); */
-    background-color: var(--color-darkgray)
-
+    background-color: var(--color-darkgray) 
     
 }
+
+.section-business::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1px); 
+    z-index: 2;
+}
+
 
 .flex-bussines {
     display: flex;
@@ -157,6 +169,8 @@ body {
     /* font-family: var(--font-family); */
     width: 696px;
     text-align: center;
+    position: relative;
+    z-index: 3;
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -173,6 +187,8 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     margin: 0 auto;
+    position: relative;
+    z-index: 3;
     padding: 10px 32px 10px 32px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -183,6 +199,7 @@ body {
 /* ============MODAL============= */
 .backdrop {
     position: fixed;
+    z-index: 4;
     top: 0;
     left: 0;
     width: 100%;
