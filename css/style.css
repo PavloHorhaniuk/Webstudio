@@ -120,16 +120,20 @@ body {
     letter-spacing: 0.02em;
     display: flex;
     align-items: center;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 100ms;
+
     fill: var(--color-gray);
     gap: 10px;
     color: var(--color-gray)
 }
 
-.header-list-link:hover {
+.header-list-item:hover .header-list-link {
     color: var(--color-hover);
     fill: var(--color-hover);
 }
-
 /* colors section */
 .section-business {
     position: relative;
