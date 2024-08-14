@@ -1,4 +1,4 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <nav class="nav">
                 <a class="header-logo" href="./"><span class="span-logo">Web</span>Studio</a>
                 <ul class="nav-list">
-                    <li class="nav-item active-studio"><a class="nav-link" href="./index.html">Студія</a></li>
+                    <li class="nav-item "><a class="nav-link active-link" href="./index.html">Студія</a></li>
                     <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
                 </ul>
@@ -30,7 +31,7 @@
             <ul class="header-list">
                 <li class="header-list-item">
                     <a class="header-list-link" href="mailto:info@devstudio.com">
-                        <svg  width="16" height="12">
+                        <svg width="16" height="12">
                             <use href="./images/symboldefs.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
@@ -50,14 +51,17 @@
     <main>
         <section class="section-business">
             <div class="conteiner flex-bussines">
-                <h1 class="business-titel">Ефективні рішення для вашого бізнесу</h1>
+                <h1  class="business-titel">Ефективні рішення для вашого бізнесу</h1>
                 <button class="business-button" type="button" data-modal-open>Замовити послугу</button>
                 <div class="backdrop is-hidden show" data-modal>
                     <div class="modal">
                         <button class="btn" data-modal-close>
-                            <svg class="close-modal-svg" width="11" height="11" viewBox="0 0 11 11" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="black"/>
-                                </svg>
+                            <svg class="close-modal-svg" width="11" height="11" viewBox="0 0 11 11" fill="black"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z"
+                                    fill="black" />
+                            </svg>
                         </button>
                         <br />
                         <br />
@@ -111,7 +115,7 @@
                 <ul class="about-us-list">
                     <li class="about-us-item">
                         <div class="about-us-img">
-                            <h3 class="about-us-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <h3 data-aos="zoom-out-down" class="about-us-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                             <p class="about-us-text">
                                 Ідейні міркування,
                                 і навіть початок повсякденної
@@ -121,7 +125,7 @@
                     </li>
                     <li class="about-us-item">
                         <div class="about-us-img">
-                            <h3 class="about-us-title">ПУНКТУАЛЬНІСТЬ</h3>
+                            <h3 data-aos="zoom-out-down" class="about-us-title">ПУНКТУАЛЬНІСТЬ</h3>
                             <p class="about-us-text">
                                 Завдання організації,
                                 особливо рамки і місце
@@ -131,7 +135,7 @@
                     </li>
                     <li class="about-us-item">
                         <div class="about-us-img">
-                            <h3 class="about-us-title">ПЛАНУВАННЯ</h3>
+                            <h3 data-aos="zoom-out-down" class="about-us-title">ПЛАНУВАННЯ</h3>
                             <p class="about-us-text">
                                 Так само консультація
                                 з широким активом
@@ -141,7 +145,7 @@
                     </li>
                     <li class="about-us-item">
                         <div class="about-us-img">
-                            <h3 class="about-us-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <h3 data-aos="zoom-out-down" class="about-us-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                             <p class="about-us-text">
                                 Значимість цих проблем
                                 настільки очевидна, що
@@ -431,6 +435,10 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
