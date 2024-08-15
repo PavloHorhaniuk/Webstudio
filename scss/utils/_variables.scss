@@ -1,0 +1,51 @@
+:root {
+    --brand-color: #212121;
+    --color-blue: #2196F3;
+    --color-darkgray: #2F303A;
+    --color-gray: #757575;
+    --color-white: #FFFFFF;
+    --background-color: #F5F4FA;
+    --color-hover: #2196F3;
+    --color-address: rgb(153, 153, 153);
+    --color-dark: #000;
+
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+
+$colors: (
+                // brand-color: #212121,
+                // color-blue: #2196F3,
+                // color-darkgray: #2F303A,
+                // color-gray: #757575,
+                // color-white: #FFFFFF,
+                // background-color: #F5F4FA,
+                // color-hover: #2196F3,
+                // color-address: rgb(153, 153, 153),
+                // color-dark: #000,
+    brand: #212121,
+    blue: #2196F3,
+    darkgray: #2F303A,
+    gray: #757575,
+    white: #FFFFFF,
+    background: #F5F4FA,
+    hover: #2196F3,
+    address: rgb(153, 153, 153),
+    dark: #000,
+);
+
+
+@function getColor($key) {
+    @return map-get($colors, $key)
+}
+
+
+$fonts: (
+    second-family:"Raleway",
+    font-family:"Roboto",
+); 
+
+
+@function getFont($key) {
+    @return map-get($fonts, $key)
+}
