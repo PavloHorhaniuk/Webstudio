@@ -2,60 +2,52 @@
     padding-top: 94px;
 }
 
-.about-us-list {
+.about-us__list {
     display: flex;
 }
 
-.about-us-item {
+.about-us-list__item {
     margin-right: 30px;
     width: 270px;
 }
 
-.about-us-item:nth-child(1)::before {
-    display: flex;
+.about-us-list__item:nth-child(1)::before {
+    @include flex_BGcen_no-r;
     height: 120px;
     background-image: url(../images/antenna.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 4px;
     background-color: #F5F4FA;
     content: '';
 }
 
-.about-us-item:nth-child(2)::before {
-    display: flex;
+.about-us-list__item:nth-child(2)::before {
+    @include flex_BGcen_no-r;
     height: 120px;
     background-image: url(../images/clock.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 4px;
     background-color: #F5F4FA;
     content: '';
 }
 
-.about-us-item:nth-child(3)::before {
-    display: flex;
+.about-us-list__item:nth-child(3)::before {
+    @include flex_BGcen_no-r;
     height: 120px;
     background-image: url(../images/diagram.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 4px;
     background-color: #F5F4FA;
     content: '';
 }
 
-.about-us-item:nth-child(4)::before {
-    display: flex;
+.about-us-list__item:nth-child(4)::before {
+    @include flex_BGcen_no-r;
     height: 120px;
     background-image: url(../images/astronaut.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 4px;
     background-color: #F5F4FA;
     content: '';
 }
 
-.about-us-title {
+.about-us-list__title {
     /* font-family: var(--font-family); */
     font-weight: 700;
     font-size: 14px;
@@ -65,7 +57,7 @@
     color: var(--brand-color)
 }
 
-.about-us-text {
+.about-us-list__text {
     /* font-family: var(--font-family); */
     margin-top: 10px;
     font-weight: 400;

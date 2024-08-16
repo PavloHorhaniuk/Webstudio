@@ -1,0 +1,16 @@
+@mixin flex_AIcen {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex_DRcolAIcen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex_BGcen_no-r{
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+}

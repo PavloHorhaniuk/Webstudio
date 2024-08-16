@@ -3,7 +3,7 @@
     padding-bottom: 94px;
 }
 
-.img-titel {
+.img__titel {
     /* font-family: var(--font-family); */
     font-weight: 700;
     font-size: 36px;
@@ -12,21 +12,21 @@
     color: var(--brand-color)
 }
 
-.img-list {
+.img__list {
     display: flex;
     justify-content: center;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.img-item {
+.img-list__item {
     display: flex;
     position: relative;
     width: 370px;
     height: 294px;
 }
 
-.img-text {
+.img-list__text {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;

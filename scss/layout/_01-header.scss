@@ -1,6 +1,5 @@
 .flex-header {
-    display: flex;
-    align-items: center;
+    @include flex_AIcen;
 }
 
 .header {
@@ -13,8 +12,7 @@
 }
 
 .header-span__logo {
-    display: flex;
-    align-items: center;
+    @include flex_AIcen;
     font-family: getFont('font-family');
     font-weight: 700;
     font-size: 26px;
@@ -22,9 +20,8 @@
     color: getColor('hover');
 }
 
-.header__logo{
-    display: flex;
-    align-items: center;
+.header__logo {
+    @include flex_AIcen;
     font-family: getFont('second-font');
     font-weight: 700;
     font-size: 26px;
@@ -83,8 +80,7 @@
 }
 
 .header-list {
-    display: flex;
-    align-items: center;
+    @include flex_AIcen;
 }
 
 .header-list__item:first-child {
@@ -96,8 +92,7 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
+    @include flex_AIcen;
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

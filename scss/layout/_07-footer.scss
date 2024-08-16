@@ -12,7 +12,7 @@
     margin-top: 20px;
 }
 
-.footer-text {
+.footer-list__text {
     /* font-family: var(--font-family); */
     font-weight: 400;
     font-size: 14px;
@@ -21,12 +21,12 @@
     color: var(--color-white)
 }
 
-.footer-item:not(:last-child) {
+.footer-list__item:not(:last-child) {
     margin-top: 9px;
     margin-bottom: 9px;
 }
 
-.footer-link {
+.footer-list__link {
     /* font-family: var(--font-family); */
     margin-top: 9px;
     font-weight: 400;
@@ -36,7 +36,7 @@
     color: var(--color-address);
 }
 
-.footer-logo {
+.footer__logo {
     color: var(--color-blue);
     font-family: var(--second-family);
     font-weight: 700;
@@ -46,13 +46,13 @@
     color: var(--color-white)
 }
 
-.flex-svg {
+.footer__flex-svg {
     width: 206px;
     height: 80px;
     padding-top: 12px;
 }
 
-.footer-titel-svg {
+.footer__titel-svg {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
@@ -63,14 +63,14 @@
     color: var(--color-white);
 }
 
-.footer-list-svg {
+.footer__list-svg {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.footer-link-svg {
+.footer-list__link-svg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,11 +85,11 @@
     transition-delay: 0ms;
 }
 
-.footer-item-svg:hover .footer-link-svg {
+.footer-list__item-svg:hover .footer-list__link-svg {
     background-color: var(--color-hover);
 }
 
-.box-footer {
+.footer__box {
     width: 231px;
     margin-right: 70px;
 }
@@ -101,11 +101,11 @@
     padding-top: 12px;
 }
 
-.form-footer {
+.footer__form {
     display: flex;
 }
 
-.subscribe-titel {
+.foter-sub__title {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
@@ -115,7 +115,7 @@
     color: var(--color-white);
 }
 
-.subscribe-input {
+.foter-sub__input {
     /* display: flex; */
     font-family: var(--font-family);
     font-weight: 400;
@@ -134,7 +134,7 @@
     background: rgba(33, 150, 243, 0);
 }
 
-.subscribe-link {
+.foter-sub__link {
     display: flex;
     justify-content: center;
     align-items: center;
