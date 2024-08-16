@@ -7,7 +7,7 @@
     height: 100vh;
     background-image: url(../images/business.png);
     background-size: cover;
-    background-color: var(--color-darkgray)
+    background-color: getColor('color-darkgray');
 }
 
 .hero::before {
@@ -28,7 +28,7 @@
 }
 
 .hero__titel {
-    /* font-family: var(--font-family); */
+    // font-family: getFont('font-family');
     width: 696px;
     text-align: center;
     position: relative;
@@ -39,11 +39,11 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--color-white)
+    color: getColor('color-white');
 }
 
 .hero__button {
-    /* font-family: var(--font-family); */
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -54,6 +54,6 @@
     padding: 10px 32px 10px 32px;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2196F3;
-    color: var(--color-white)
+    background-color: getColor('hover');
+    color: getColor('color-white');
 }

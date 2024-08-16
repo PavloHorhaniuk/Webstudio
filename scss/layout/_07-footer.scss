@@ -1,7 +1,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--color-darkgray)
+    background-color: getColor('color-darkgray');
 }
 
 .footer .conteiner {
@@ -13,12 +13,12 @@
 }
 
 .footer-list__text {
-    /* font-family: var(--font-family); */
+    // font-family: getFont('font-family');
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-white)
+    color: getColor('color-white')
 }
 
 .footer-list__item:not(:last-child) {
@@ -27,23 +27,23 @@
 }
 
 .footer-list__link {
-    /* font-family: var(--font-family); */
+    // font-family: getFont('font-family');
     margin-top: 9px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-address);
+    color: getColor('address');
 }
 
 .footer__logo {
-    color: var(--color-blue);
-    font-family: var(--second-family);
+    color: getColor('color-blue');
+    font-family: getFont('second-font');
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: var(--color-white)
+    color: getColor('color-white')
 }
 
 .footer__flex-svg {
@@ -53,28 +53,24 @@
 }
 
 .footer__titel-svg {
-    font-family: var(--font-family);
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
 
-    color: var(--color-white);
+    color: getColor('color-white')
 }
 
 .footer__list-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_JScenAIcen;
     gap: 10px;
 }
 
 .footer-list__link-svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--color-white);
+    @include flex_JScenAIcen;
+    fill: getColor('color-white');
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     width: 44px;
@@ -86,7 +82,7 @@
 }
 
 .footer-list__item-svg:hover .footer-list__link-svg {
-    background-color: var(--color-hover);
+    background-color: getColor('hover');
 }
 
 .footer__box {
@@ -106,18 +102,18 @@
 }
 
 .foter-sub__title {
-    font-family: var(--font-family);
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: var(--color-white);
+    color: getColor('color-white')
 }
 
 .foter-sub__input {
     /* display: flex; */
-    font-family: var(--font-family);
+    // font-family: getFont('font-family');
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
@@ -135,23 +131,21 @@
 }
 
 .foter-sub__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_JScenAIcen;
     /* text-align: center; */
-    font-family: var(--font-family);
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 16px;
     line-height: 187%;
     letter-spacing: 0.06em;
     text-align: center;
-    fill: #FFFFFF;
-    color: var(--color-white);
+    fill: getColor('color-white');
+    color: getColor('color-white');
     border-radius: 4px;
     width: 200px;
     height: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: var(--color-blue);
+    background: getColor('color-blue');
 }
 
 .svg-telegram {

@@ -16,7 +16,7 @@
     height: 120px;
     background-image: url(../images/antenna.svg);
     border-radius: 4px;
-    background-color: #F5F4FA;
+    background-color: getColor('background');
     content: '';
 }
 
@@ -25,7 +25,7 @@
     height: 120px;
     background-image: url(../images/clock.svg);
     border-radius: 4px;
-    background-color: #F5F4FA;
+    background-color: getColor('background');
     content: '';
 }
 
@@ -34,7 +34,7 @@
     height: 120px;
     background-image: url(../images/diagram.svg);
     border-radius: 4px;
-    background-color: #F5F4FA;
+    background-color: getColor('background');
     content: '';
 }
 
@@ -43,26 +43,26 @@
     height: 120px;
     background-image: url(../images/astronaut.svg);
     border-radius: 4px;
-    background-color: #F5F4FA;
+    background-color: getColor('background');
     content: '';
 }
 
 .about-us-list__title {
-    /* font-family: var(--font-family); */
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-top: 30px;
-    color: var(--brand-color)
+    color: getColor('brand');
 }
 
 .about-us-list__text {
-    /* font-family: var(--font-family); */
+    // font-family: getFont('font-family');
     margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--color-gray)
+    color: getColor('color-gray');
 }

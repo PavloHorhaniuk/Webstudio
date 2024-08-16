@@ -3,7 +3,7 @@
 }
 
 .header {
-    background-color: getColor(white);
+    background-color: getColor('color-white');
     margin: 0 auto;
     height: 80px;
     /* padding-top: 16px; */
@@ -13,7 +13,7 @@
 
 .header-span__logo {
     @include flex_AIcen;
-    font-family: getFont('font-family');
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -27,7 +27,7 @@
     font-size: 26px;
     letter-spacing: 0.03em;
     margin-right: 93px;
-    color: getColor('dark');
+    color: getColor('color-dark');
 }
 
 .header__nav {
@@ -38,14 +38,14 @@
 
 .nav-list {
     width: 281px;
-    display: flex;
+    @include flex_AIcen;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 .nav-list__link {
     position: relative;
-    font-family: getFont(font-family);
+    // font-family: getFont('font-family');
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -53,7 +53,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 100ms;
-    color: var(--brand-color)
+    color: getColor('brand');
 }
 
 .nav-list__link::after {
@@ -88,7 +88,7 @@
 }
 
 .header-list__link {
-    font-family: getFont('font-family');
+    // font-family: getFont('font-family');
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -97,9 +97,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-delay: 100ms;
-    fill: getColor(gray);
+    fill: getColor('color-gray');
     gap: 10px;
-    color: getColor(gray);
+    color: getColor('color-gray');
 }
 
 .header-list__item:hover .header-list__link {

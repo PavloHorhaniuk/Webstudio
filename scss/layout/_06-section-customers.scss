@@ -8,19 +8,17 @@
 }
 
 .customers__title {
-    font-family: var(--font-family);
+    // font-family: getFont('font-family');
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--brand-color);
+    color: getColor('brand');
     margin-bottom: 50px;
 }
 
 .customers-list__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_JScenAIcen;
     width: 170px;
     height: 92px;
     color: #AFB1B8;
@@ -33,9 +31,7 @@
 }
 
 .customers-list__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex_JScenAIcen;
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
@@ -46,9 +42,9 @@
 }
 
 .customers-list__item:hover .customers-list__link {
-    fill: var(--color-hover);
+    fill: getColor('hover');
 }
 
 .customers-list__item:hover {
-    border: 1px solid var(--color-hover);
+    border: 1px solid getColor('hover');
 }

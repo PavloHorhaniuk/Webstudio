@@ -9,13 +9,11 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--brand-color)
+    color: getColor('brand')
 }
 
 .img__list {
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    @include flex-JS;
     margin-top: 50px;
 }
 
@@ -27,16 +25,13 @@
 }
 
 .img-list__text {
-    font-family: var(--font-family);
+    // font-family: getFont('font-family');
+    @include flex_AIJSTAcen;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-align: center;
-    color: var(--color-white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: getColor('color-white');
     width: 370px;
     height: 70px;
     background: rgba(47, 48, 58, 0.8);

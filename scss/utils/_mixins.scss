@@ -3,10 +3,29 @@
     align-items: center;
 }
 
+@mixin flex_JScenAIcen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin flex_DRcolAIcen {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@mixin flex-JS {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+@mixin flex_AIJSTAcen {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 @mixin flex_BGcen_no-r{
