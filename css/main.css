@@ -295,7 +295,6 @@ body {
   /* padding-bottom: 16px; */
   max-width: 100%;
 }
-
 .header-span__logo {
   display: flex;
   align-items: center;
@@ -304,7 +303,6 @@ body {
   letter-spacing: 0.03em;
   color: #2196F3;
 }
-
 .header__logo {
   display: flex;
   align-items: center;
@@ -314,21 +312,18 @@ body {
   margin-right: 93px;
   color: #000;
 }
-
 .header__nav {
   display: flex;
   height: 80px;
   margin-right: 218px;
 }
-
-.nav-list {
+.header__nav .nav-list {
   width: 281px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.nav-list__link {
+.header__nav .nav-list__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;

@@ -9,52 +9,99 @@
     /* padding-top: 16px; */
     /* padding-bottom: 16px; */
     max-width: 100%;
+
+    &-span__logo {
+        @include flex_AIcen;
+        // font-family: getFont('font-family');
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        color: getColor('hover');
+    }
+
+    &__logo {
+        @include flex_AIcen;
+        font-family: getFont('second-font');
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.03em;
+        margin-right: 93px;
+        color: getColor('color-dark');
+    }
+
+    &__nav {
+        display: flex;
+        height: 80px;
+        margin-right: 218px;
+
+        .nav-list {
+            width: 281px;
+            @include flex_AIcen;
+            justify-content: space-between;
+
+            &__link {
+                position: relative;
+                // font-family: getFont('font-family');
+                font-weight: 500;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                transition-property: color;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-delay: 100ms;
+                color: getColor('brand');
+            }
+
+        }
+
+
+    }
 }
 
-.header-span__logo {
-    @include flex_AIcen;
-    // font-family: getFont('font-family');
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    color: getColor('hover');
-}
+// .header-span__logo {
+//     @include flex_AIcen;
+//     // font-family: getFont('font-family');
+//     font-weight: 700;
+//     font-size: 26px;
+//     letter-spacing: 0.03em;
+//     color: getColor('hover');
+// }
 
-.header__logo {
-    @include flex_AIcen;
-    font-family: getFont('second-font');
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    margin-right: 93px;
-    color: getColor('color-dark');
-}
+// .header__logo {
+//     @include flex_AIcen;
+//     font-family: getFont('second-font');
+//     font-weight: 700;
+//     font-size: 26px;
+//     letter-spacing: 0.03em;
+//     margin-right: 93px;
+//     color: getColor('color-dark');
+// }
 
-.header__nav {
-    display: flex;
-    height: 80px;
-    margin-right: 218px;
-}
+// .header__nav {
+//     display: flex;
+//     height: 80px;
+//     margin-right: 218px;
+// }
 
-.nav-list {
-    width: 281px;
-    @include flex_AIcen;
-    justify-content: space-between;
+// .nav-list {
+//     width: 281px;
+//     @include flex_AIcen;
+//     justify-content: space-between;
 
-}
+// }
 
-.nav-list__link {
-    position: relative;
-    // font-family: getFont('font-family');
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 100ms;
-    color: getColor('brand');
-}
+// .nav-list__link {
+//     position: relative;
+//     // font-family: getFont('font-family');
+//     font-weight: 500;
+//     font-size: 14px;
+//     letter-spacing: 0.02em;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-delay: 100ms;
+//     color: getColor('brand');
+// }
 
 .nav-list__link::after {
     position: absolute;
