@@ -1,16 +1,16 @@
-.section {
+.section-port-card {
         margin-top: 94px;
         margin-bottom: 94px;
 }
 
-.button-list {
+.section-port-card-btn-list {
         width: 575px;
         height: 54px;
         margin: 0 auto;
         @include flex-JS
 }
 
-.button {
+.btn-list-button {
         // font-family: getFont('font-family');
         font-weight: 500;
         font-size: 16px;
@@ -21,19 +21,19 @@
         background-color: getColor('background');
 }
 
-.button:active {
+.btn-list-button:active {
         color: getColor('color-white');
         background-color: getColor('hover');
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.border-portfolio {
+.card-list__border {
         border-right: solid 1px #eee;
         border-bottom: solid 1px#eee;
         border-left: solid 1px #eee;
 }
 
-.img__list-portfolio {
+.section-port-card-list {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
@@ -41,15 +41,15 @@
         padding-bottom: 30px;
 }
 
-.img-list__item-portfolio {
+.card-list__item {
         flex-basis: calc((100% - 60px) / 3)
 }
 
-.img-list__item-portfolio:hover {
+.card-list__item:hover {
         box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.img__titel-portfolio {
+.card-list__title {
         // font-family: getFont('font-family');
         font-weight: 700;
         font-size: 18px;
@@ -60,7 +60,7 @@
         color: getColor('brand');
 }
 
-.img-text-portfolio {
+.card-list__text {
         // font-family: getFont('font-family');
         font-weight: 400;
         font-size: 16px;
@@ -72,13 +72,13 @@
         color: getColor('color-gray');
 }
 
-.card-overlay-box {
+.card-list__overlay-box {
         position: relative;
         width: 100%;
         overflow: hidden;
 }
 
-.card-text {
+.card-list__overlay-text {
         position: absolute;
         padding: 63px 24px;
         // font-family: getFont('font-family');
@@ -91,6 +91,6 @@
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.img-list__item-portfolio:hover .card-text {
+.card-list__item:hover .card-list__overlay-text {
         transform: translateY(-100%);
 }

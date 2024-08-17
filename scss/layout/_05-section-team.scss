@@ -8,7 +8,7 @@
     @include flex_DRcolAIcen;
 }
 
-.team__list {
+.section-team-list {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -21,19 +21,19 @@
     padding-bottom: 20px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-    background-color:  getColor('color-white');
+    background-color: getColor('color-white');
     /* display: flex; */
     /* padding-right: 30px; */
     /* margin-right: 30px; */
 }
 
-.team__list-svg {
+.section-team-svg-list {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.team-list-svg__link {
+.team-svg-list__link {
     @include flex_JScenAIcen;
     width: 44px;
     height: 44px;
@@ -45,7 +45,7 @@
     fill: #AFB1B8;
 }
 
-.team-list-svg__item:hover .team-list-svg__link {
+.team-svg-list__item:hover .team-svg-list__link {
     fill: getColor('backgroung');
     background-color: getColor('hover');
 }
