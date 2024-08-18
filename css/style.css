@@ -39,7 +39,7 @@ body {
     max-width: 100%;
 }
 
-.footer-span__logo {
+.header-span__logo {
     display: flex;
     align-items: center;
     color: var(--color-blue);
@@ -49,7 +49,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-.header-logo {
+.header__logo {
     display: flex;
     align-items: center;
     font-family: var(--second-family);
@@ -60,7 +60,7 @@ body {
     color: var(--color-dark)
 }
 
-.nav {
+.header__nav {
     display: flex;
     height: 80px;
     margin-right: 218px;
@@ -73,7 +73,7 @@ body {
     align-items: center;
 }
 
-.nav-link {
+.nav-list__link {
     position: relative;
     font-family: var(--font-family);
     font-weight: 500;
@@ -86,10 +86,10 @@ body {
     color: var(--brand-color)
 }
 
-.nav-link::after {
+.nav-list__link::after {
     position: absolute;
     content: '';
-    bottom: -185%;
+    bottom: -180%;
     left: 0;
     width: 100%;
     height: 2px;
@@ -99,13 +99,22 @@ body {
     transition: transform 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-list__link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.nav-link:hover {
+.nav-list__link:hover {
     color: #2196F3;
+}
+
+.nav-list__link.nav-list__link--active {
+    color: #2196f3;
+}
+
+.nav-list__link.nav-list__link--active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .header-list {
@@ -113,11 +122,11 @@ body {
     align-items: center;
 }
 
-.header-list-item:first-child {
+.header-list__item:first-child {
     margin-right: 50px;
 }
 
-.header-list-link {
+.header-list__link {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
@@ -134,13 +143,13 @@ body {
     color: var(--color-gray)
 }
 
-.header-list-item:hover .header-list-link {
+.header-list__item:hover .header-list__link {
     color: var(--color-hover);
     fill: var(--color-hover);
 }
 
 /* colors section */
-.section-business {
+.hero {
     position: relative;
     z-index: 1;
     padding-top: 200px;
@@ -154,7 +163,7 @@ body {
     background-color: var(--color-darkgray)
 }
 
-.section-business::before {
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -167,13 +176,13 @@ body {
 }
 
 
-.flex-bussines {
+.flex-hero {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.business-titel {
+.hero__titel {
     /* font-family: var(--font-family); */
     width: 696px;
     text-align: center;
@@ -188,7 +197,7 @@ body {
     color: var(--color-white)
 }
 
-.business-button {
+.hero__button {
     /* font-family: var(--font-family); */
     font-weight: 700;
     font-size: 16px;
@@ -241,13 +250,13 @@ body {
     /* opacity: 0; */
 }
 
-.modal .btn {
+.modal .modal__btn {
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
-.btn {
+.modal__btn {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -255,12 +264,12 @@ body {
     background-color: var(--color-white);
 }
 
-.form {
+.modal-form {
     text-align: center;
     /* display: flex; */
 }
 
-.form-titel {
+.modal__titel {
     width: 448px;
     margin-top: 40px;
     margin-bottom: 12px;
@@ -272,10 +281,10 @@ body {
     color: #212121;
 }
 
-.label-name,
-.label-tel,
-.label-email,
-.label-text {
+.modal-label__name,
+.modal-label__tel,
+.modal-label__email,
+.modal-label__text {
     display: flex;
     margin-left: 40px;
     margin-bottom: 4px;
@@ -286,23 +295,23 @@ body {
     color: var(--color-gray);
 }
 
-.input-box {
+.modal-input__box {
     position: relative;
 }
 
-.input-svg {
+.modal-input__svg {
     position: absolute;
     top: 25%;
     left: 10%;
 }
 
-.input-box:hover {
+.modal-input__box:hover {
     fill: var(--color-hover);
 }
 
-.input-name,
-.input-tel,
-.input-email {
+.modal-input__name,
+.modal-input__tel,
+.modal-input__email {
     /* position: absolute; */
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -312,17 +321,17 @@ body {
     padding-left: 42px;
 }
 
-.input-name:focus {
+.modal-input__name:focus {
     border: 1px solid #2196f3;
     outline: none;
 }
 
-.input-tel:focus {
+.modal-input__tel:focus {
     border: 1px solid #2196f3;
     outline: none;
 }
 
-.input-email:focus {
+.modal-input__email:focus {
     border: 1px solid #2196f3;
     outline: none;
 }
@@ -376,7 +385,7 @@ body {
     color: var(--color-gray);
 } */
 
-.text-area {
+.modal-text__area {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
@@ -387,22 +396,22 @@ body {
 
 }
 
-.text-area:focus {
+.modal-text__area:focus {
     border: 1px solid #2196f3;
     outline: none;
 }
 
-.label-checkbox {
+.modal-label__checkbox {
     display: flex;
     justify-content: center;
 }
 
-.checkbox {
+.modal-inpur__checkbox {
     margin-right: 10px;
 
 }
 
-.checkbox-text {
+.modal-checkbox__text {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
@@ -411,13 +420,13 @@ body {
     color: var(--color-gray);
 }
 
-.checkbox-link {
+.modal-checkbox__link {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--color-blue);
 }
 
-.form-button {
+.modal-form__button {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 16px;
@@ -438,16 +447,16 @@ body {
     padding-top: 94px;
 }
 
-.about-us-list {
+.section-about-us-list {
     display: flex;
 }
 
-.about-us-item {
+.about-us-list__item {
     margin-right: 30px;
     width: 270px;
 }
 
-.about-us-item:nth-child(1)::before {
+.about-us-list__item:nth-child(1)::before {
     display: flex;
     height: 120px;
     background-image: url(../images/antenna.svg);
@@ -458,7 +467,7 @@ body {
     content: '';
 }
 
-.about-us-item:nth-child(2)::before {
+.about-us-list__item:nth-child(2)::before {
     display: flex;
     height: 120px;
     background-image: url(../images/clock.svg);
@@ -469,7 +478,7 @@ body {
     content: '';
 }
 
-.about-us-item:nth-child(3)::before {
+.about-us-list__item:nth-child(3)::before {
     display: flex;
     height: 120px;
     background-image: url(../images/diagram.svg);
@@ -480,7 +489,7 @@ body {
     content: '';
 }
 
-.about-us-item:nth-child(4)::before {
+.about-us-list__item:nth-child(4)::before {
     display: flex;
     height: 120px;
     background-image: url(../images/astronaut.svg);
@@ -540,7 +549,7 @@ body {
     height: 294px;
 }
 
-.team-list__text {
+.img-list__text {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
