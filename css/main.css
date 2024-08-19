@@ -57,25 +57,9 @@ body {
 }
 
 .conteiner {
-  width: 100%;
-  min-width: 320px;
-  padding: 0 30px;
+  width: 1200px;
   margin: 0 auto;
-}
-@media screen and (min-width: getBraik-Points("mobile")) {
-  .conteiner {
-    max-width: getBraik-Points("mobile");
-  }
-}
-@media screen and (min-width: getBraik-Points("tabel")) {
-  .conteiner {
-    max-width: getBraik-Points("tabel");
-  }
-}
-@media screen and (min-width: getBraik-Points("desktop")) {
-  .conteiner {
-    max-width: getBraik-Points("desktop");
-  }
+  padding: 0 15px;
 }
 
 .backdrop {
